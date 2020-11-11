@@ -21,25 +21,49 @@ p(
 <h1 style="background-color:powderblue;"> My First Day  </h1>
 <strong> This is my first time attempting html code </strong>
 <hr>
+<div style="background-color: black;color:white;padding:20px">
 <p style="font-size:50px;"> I enrolled on this course because of my interest in computing an my desire to go to university. </p>
 <p style="font-family: Verdana;"> I had never considered university before, <br> until i was left with only a c in maths when leaving college </p>
+</div>
 <img src="https://upload.wikimedia.org/wikipedia/en/thumb/1/13/The_College_of_West_Anglia_logo.svg/1200px-The_College_of_West_Anglia_logo.svg.png
 " alt="cwa.ac.uk" width="150" height="150">
 <a href="https://cwa.ac.uk/">The college website!</a>
-<table style="width:100%">
-	<tr>
-		<th>Frist name</th>
-		<th>Last name</th>
-		<th>Age</th>
-	</tr>
-	<tr>
-		<td>Tyler Butler</td>
-	</tr>
+<h2>Things i like to do</h2>
+<ol>
+	<li>Boxing</li>
+	<li>Basketball</li>
+	<li>Football</li>
+</ol>
 
+<h2>The use of a button</h2>
 
+<p>The button allows the user to perform an action by clicking the button box</p>
 
+<button type="button" onclick="myfunction()"> Click Me!</button>
+<p id="demo"> This is a demonstration.</p>
+<script>function myfunction() {
 
+document.getElementById("demo").innerHTML = "Hello JavaScript!;"
+}
+</script>
+<h1>The changing of an image by clicking a button</h1>
 
-</table>
+<script>
+function image(sw) {
+	var pic;
+	if (sw == 0) {
+		pic = "https://i5.walmartimages.com/asr/23fda451-702b-4f9c-b59e-1d571b036664_1.d9823ea1690a2868f544c7ad2d7e29f5.jpeg?odnHeight=450&odnWidth=450&odnBg=FFFFFF"
+	} else {
+		pic = "pic_bulbon.gif"
+	}
+	document.getElementById('myImage').src = pic;
+}
+</script>
+ <img id="myImage" src="pic_bulboff.gif" width="100" height="180">
+
+<p>
+<button type="button" onclick="light(1)">Light on</button>
+<button type="button" onclick="light(0)">Light Off</button>
+</p>
 </body>
 </html>
